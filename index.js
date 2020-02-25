@@ -14,6 +14,9 @@
  * Invoking `processFirstItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'foofoo'.
 */
+//create HOF function
+//function has two arguments: stringList and callback
+//function will return callback invocation with stringList[0]
 function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
@@ -48,8 +51,8 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
-  /* CODE HERE */
+function processLength(list, callback) {
+  return callback(list.length);
 }
 
 /**
