@@ -191,10 +191,10 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 function getFullNames(runners) {
   const lastFirst = [];
   runners.forEach(function(entireName){
-    lastFirst.push("" + ${entireName.last_name} + ", " + ${entireName.first_name});
+    lastFirst.push(${entireName.last_name} ${entireName.first_name});
   })
   return lastFirst;
-}//end of getFullNames
+}
 
 /**
  * ### Challenge `firstNamesAllCaps`
@@ -208,8 +208,8 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
+function firstNamesAllCaps(runners) {
+  const upper = runners.map((cap) => cap.first_name.toUpperCase())
 }
 
 /**
