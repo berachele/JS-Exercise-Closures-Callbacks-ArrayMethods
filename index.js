@@ -89,9 +89,14 @@ function processLastItem(stringList, callback) {
  * 
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
-*/
-function processSum(/* CODE HERE */) {
-  /* CODE HERE */
+*///make a HOF called processSum
+//2 arguments, numberList[] and callback
+//return result of callback invocation
+function processSum(numberList, callback) {
+  const sum = numberList.reduce((acc, item) => {
+    return acc + item;
+  }, 0)
+  return callback(sum);
 }
 
 /**
