@@ -225,8 +225,16 @@ function firstNamesAllCaps(runners) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+//create function with runners and tShirtSize as arguments
+//return an array
+//array contains shirt sizes in the same order they appeared in runners array
+//need if - else if - else statment 
+//if -  returns an array of runners of a given shirt size:
+//else if - returns an array of the correct length:
+//else returns 0 for an empty runners array:
+
+function getRunnersByTShirtSize(runners, tShirtSize) {
+  return runners.filter(cv => cv.shirt_size === tShirtSize)
 }
 
 /**
